@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:DATABASE # jdbc:h2:file:/data/demo
+    driverClassName: org.h2.Driver
+    username: databaseUser
+    password: databasePassword
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+      path: /h2
+
+  flyway:
+    user: databaseUser
+    password: databasePassword
+    schemas: wedding
+    url: jdbc:h2:mem:DATABASE
+    locations: classpath:db/migration,filesystem:/opt/migration
+    baseline-on-migrate: true
