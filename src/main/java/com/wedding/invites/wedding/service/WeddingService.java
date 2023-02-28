@@ -24,7 +24,9 @@ public class WeddingService {
         return mapIntoDTO(person.get());
     }
 
-    private PersonDTO mapIntoDTO(Person person){
-        return PersonDTO.builder().name(person.getName()).rsvp(person.getRsvp()).email(person.getEmail()).id(person.getId()).build();
+    private PersonDTO mapIntoDTO(Person person) {
+        return PersonDTO.builder().name(person.getName()).rsvp(person.getRsvp())
+                .email(person.getEmail())
+                .id(person.getId()).build();
     }
 }
