@@ -1,8 +1,12 @@
 import React, { ReactElement } from "react";
 
-export const Tab = ({title}): ReactElement => {
-  return(
-  <>
-<button >{title}</button>
-  </>);
+interface TabProps {
+  title: String;
+}
+export const Tab = ({ title }: TabProps): ReactElement => {
+  return (
+    <>
+      <button>{title}</button>
+    </>
+  );
 };

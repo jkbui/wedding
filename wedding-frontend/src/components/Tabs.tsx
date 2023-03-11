@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react";
-import { Tab } from "./Tab.tsx";
+import { Tab } from "./Tab";
 
 export const Tabs = (): ReactElement => {
   return (
