@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import { Tab } from "./components/Tab.tsx";
-import { Tabs } from "./components/Tabs.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 import { WherePage } from "./pages/WherePage";
